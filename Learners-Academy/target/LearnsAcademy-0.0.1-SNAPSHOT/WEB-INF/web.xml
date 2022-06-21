@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>LearnsAcademy</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>TeacherServlet</display-name>
+    <servlet-name>TeacherServlet</servlet-name>
+    <servlet-class>com.learnersacademy.trg.controllers.TeacherServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TeacherServlet</servlet-name>
+    <url-pattern>/TeacherServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ClassesServlet</display-name>
+    <servlet-name>ClassesServlet</servlet-name>
+    <servlet-class>com.learnersacademy.trg.controllers.ClassesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ClassesServlet</servlet-name>
+    <url-pattern>/ClassesServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>GetAllStudents</display-name>
+    <servlet-name>GetAllStudents</servlet-name>
+    <servlet-class>com.learnersacademy.trg.controllers.GetAllStudents</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetAllStudents</servlet-name>
+    <url-pattern>/GetAllStudents</url-pattern>
+  </servlet-mapping>
+</web-app>
